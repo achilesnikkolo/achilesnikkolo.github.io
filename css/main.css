@@ -16,6 +16,15 @@ h1 {
   font-weight: bolder;
 }
 
+a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #eb0364;
+}
+
 #head {
   background-color: #252934;
   color: white;
@@ -390,14 +399,9 @@ h1 {
   }
 }
 
-.projects .post a {
-  padding-left: 10px;
-  color: #eb0364;
-}
-
 @media (min-width: 400px) {
   .projects .post a {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
 }
 
