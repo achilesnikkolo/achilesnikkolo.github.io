@@ -11,6 +11,59 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  -webkit-animation: transition 0.7s;
+          animation: transition 0.7s;
+}
+
+@-webkit-keyframes transition {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes transition {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes transition_color {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes transition_color {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: bolder;
@@ -50,6 +103,8 @@ a:hover {
 #head .name {
   font-weight: 1000;
   color: #eb0364;
+  -webkit-animation: transition_color 0.7s ease-in-out;
+          animation: transition_color 0.7s ease-in-out;
 }
 
 #head .view-work-btn {
@@ -87,6 +142,7 @@ a:hover {
 
 .nav-bar {
   background-color: #1b242f;
+  z-index: 10;
 }
 
 .nav-bar .hamburger {

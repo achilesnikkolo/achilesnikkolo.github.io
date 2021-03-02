@@ -8,6 +8,28 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  animation: transition 0.7s;
+}
+
+@keyframes transition {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes transition_color {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 $bg-color: #252934;
 $white: white;
 
@@ -39,6 +61,8 @@ a {
   .name {
     font-weight: 1000;
     color: #eb0364;
+
+    animation: transition_color 0.7s ease-in-out;
   }
 
   .view-work-btn {
@@ -72,6 +96,7 @@ a {
 //header nav
 .nav-bar {
   background-color: #1b242f;
+  z-index: 10;
   .hamburger {
     display: flex;
     color: $white;
