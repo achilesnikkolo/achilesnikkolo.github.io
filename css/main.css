@@ -238,8 +238,34 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-animation: nav_animation 0.5s ease-in-out;
+          animation: nav_animation 0.5s ease-in-out;
+}
+
+@-webkit-keyframes nav_animation {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes nav_animation {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .sticky + .content {
@@ -260,7 +286,7 @@ a:hover {
   content: '';
   position: absolute;
   bottom: -10px;
-  width: 25%;
+  width: 177px;
   height: 2px;
   background-color: black;
 }
@@ -403,20 +429,27 @@ a:hover {
   padding: 10px;
   text-align: center;
   position: relative;
+  font-size: 20px;
 }
 
 .projects .title::before {
   content: '';
   position: absolute;
   bottom: -2px;
-  width: 40%;
+  width: 25%;
   height: 2px;
   background-color: black;
 }
 
 @media (min-width: 400px) {
   .projects .title::before {
-    width: 11%;
+    width: 160px;
+  }
+}
+
+@media (min-width: 400px) {
+  .projects .title {
+    font-size: 33px;
   }
 }
 
@@ -434,6 +467,7 @@ a:hover {
 
 .projects .post h1 {
   padding: 10px;
+  font-size: 20px;
 }
 
 @media (min-width: 400px) {
@@ -471,6 +505,7 @@ a:hover {
 
 .contact h1 {
   padding: 10px;
+  color: white;
 }
 
 .contact .gmail {
@@ -480,14 +515,15 @@ a:hover {
 .contact .gmail a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.contact .gmail a:hover {
   color: #eb0364;
 }
 
+.contact .gmail a:hover {
+  color: aqua;
+}
+
 .contact a {
-  color: aquamarine;
+  color: #eb0364;
   padding: 10px;
 }
 

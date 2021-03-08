@@ -156,9 +156,18 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.3s ease-out;
+  animation: nav_animation 0.5s ease-in-out;
 }
-
+@keyframes nav_animation {
+  from {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .sticky + .content {
   padding-top: 102px;
 }
@@ -174,7 +183,7 @@ a {
         content: '';
         position: absolute;
         bottom: -10px;
-        width: 25%;
+        width: 177px;
         height: 2px;
         background-color: black;
         @media (max-width: 700px) {
@@ -277,17 +286,21 @@ a {
     padding: 10px;
     text-align: center;
     position: relative;
+    font-size: 20px;
     &::before {
       content: '';
       position: absolute;
       bottom: -2px;
-      width: 40%;
+      width: 25%;
       height: 2px;
       background-color: black;
 
       @media (min-width: 400px) {
-        width: 11%;
+        width: 160px;
       }
+    }
+    @media (min-width: 400px) {
+      font-size: 33px;
     }
   }
 
@@ -302,6 +315,7 @@ a {
 
     h1 {
       padding: 10px;
+      font-size: 20px;
       @media (min-width: 400px) {
         background-color: #f0ead6;
       }
@@ -330,19 +344,21 @@ a {
 
   h1 {
     padding: 10px;
+    color: white;
   }
   .gmail {
     padding: 10px;
     a {
       transition: all 0.3s ease;
+      color: #eb0364;
       &:hover {
-        color: #eb0364;
+        color: aqua;
       }
     }
   }
 
   a {
-    color: aquamarine;
+    color: #eb0364;
     padding: 10px;
     .fa-hand-point-up {
       font-size: 2.5em;
