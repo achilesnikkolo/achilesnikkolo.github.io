@@ -37,3 +37,26 @@ function myFunction() {
     header.classList.remove('sticky');
   }
 }
+// $(window).on('load', function () {
+//   $('.load').fadeOut('slow');
+// });
+
+$('.dark').click(changeColorDark);
+$('.light').click(changeColorLight);
+$('.medium').click(changeColorMedium);
+
+function changeColorDark() {
+  $('.bg-color').css({
+    'background-color': '#00072B',
+  });
+}
+function changeColorLight() {
+  $('.bg-color').css({
+    'background-color': '#233755',
+  });
+}
+function changeColorMedium() {
+  $('.bg-color').css({
+    'background-color': '#1a2528',
+  });
+}

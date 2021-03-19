@@ -20,12 +20,18 @@
     <title>AchiLes Portfolio</title>
 </head>
 <body>
-    <section id="head">
-        <h1>Hello, I'm <span class="name">Nikkolo Achiles Calilung</span>.</h1>
-        <h1>I'm a Front-end Web developer</h1>
-        <a href="#projects" class="view-work-btn">View my work <i class="far fa-arrow-circle-right"></i> </a>
+    <section id="head" class="bg-color">
+        <h1><span class="name"> Shopify & Front-end Developer</span></h1>
+        <p class="description">I code nothing to something and I love what I do.</p>
+        <a href="#projects" class="view-work-btn">MY WORK <i class="far fa-arrow-circle-right"></i> </a>
+        
+        <div class="circle_container">
+            <div class="dark circle"></div>
+            <div class="light circle"></div>
+            <div class="medium circle"></div>
+        </div>
     </section>
-
+<div class="body">
     <div class="nav-bar">
         <div class="hamburger"><i class="fas fa-bars"></i></div>
         <nav>
@@ -36,13 +42,15 @@
             </ul>
         </nav>
     </div>
-    
+
     <section class="about">
 
         <div class="about_me">
             <a id="about"><h1>About</h1></a>
+            <div class="myName">Hi! I'm AchiLes. Nice to meet you.</div>
             <p>
-                &nbsp&nbsp&nbspIn the past few years, I studied HTML/CSS/JS but it's not continuously because I am a college student, I have studies and responsibilities that need to prioritize however, because of pandemic I turn this event to a good opportunity to study more and find a job that suit for me. Currently, I studied Shopify and I created a store from it, you can look it in <a href="#projects">my project section</a>. I am a second-year college IT student and I’m very passionate about this course because I love making from nothing to something. and I’m deepening my knowledge in Shopify and also adding more experience to make a wonderful responsive website. I never stop learning and I believed little things make big things happen.
+                This is the beginning of my journey as a freelance Shopify/front-end developer. I've done passion-based projects and I'm quietly confident, Giving my 100% effort in every <a href="#projects">projects</a>, and perpetually working on improving my skills in this Journey.
+                
             </p>
        </div>
 
@@ -62,26 +70,42 @@
       </div>
     </section>
     <div class="projects">
-       <a id="projects"><h1 class="title">Project</h1></a> 
-        <div class="post">
-            <img class="thumbnail" src="/img/thumnail.png" alt="">
+        <a id="projects"><h1 class="title">Project</h1></a> 
+        <div class="projects_container">
+            <div class="post">
+                <img class="thumbnail" src="/img/thumnail.png" alt="">
 
-            <h1>AchiLes FreeLance / Test Project</h1>
-            <p>I built it using on the Shopify debut</p>
-            <p>To Open this you need a password : <b>abcd</b> 
-            <a href="https://achiles-freelance.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaVJoWTJocGJHVnpMV1p5WldWc1lXNWpaUzV0ZVhOb2IzQnBabmt1WTI5dEJqb0dSVlE9IiwiZXhwIjoiMjAyMS0wMi0yOFQxNDoyNjozNi42ODVaIiwicHVyIjoicGVybWFuZW50X3Bhc3N3b3JkX2J5cGFzcyJ9fQ%3D%3D--3f9b58e35cc8d89aab783ab85ae25e19c45074a9&_fd=0&_sc=1&key=3d7b2ee653dcb299ccd2e0e2af536396803c5fd70a82b464e39ee8ddef19a648" target="_blank">visit</a>
-        </p>
-        </div>
+                <h1>AchiLes FreeLance / Test Project</h1>
+                <p>Shopify Theme</p>
+                <p>To Open this you need a password : <b>abcd</b> 
+                <a href="https://achiles-freelance.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaVJoWTJocGJHVnpMV1p5WldWc1lXNWpaUzV0ZVhOb2IzQnBabmt1WTI5dEJqb0dSVlE9IiwiZXhwIjoiMjAyMS0wMi0yOFQxNDoyNjozNi42ODVaIiwicHVyIjoicGVybWFuZW50X3Bhc3N3b3JkX2J5cGFzcyJ9fQ%3D%3D--3f9b58e35cc8d89aab783ab85ae25e19c45074a9&_fd=0&_sc=1&key=3d7b2ee653dcb299ccd2e0e2af536396803c5fd70a82b464e39ee8ddef19a648" target="_blank">visit</a>
+            </p>
+            </div>
+            
+            <div class="post">
+                <img class="thumbnail" src="/img/thumbnail_hajume.png" alt="">
+
+                <h1>Hajime Store</h1>
+                <p>Shopify Theme</p>
+                <p>To Open this you need a password : <b>abcd</b> 
+                <a href="hajime-store.myshopify.com" target="_blank">visit</a>
+            </p>
+            </div>
     </div>
+    </div>
+</div>
+    <div class="contact bg-color">
+        <a id="contact"><h1>Start a project</h1></a>
+        <p>Interested in working together? We should queue up a chat.</p>
 
-    <div class="contact">
-        <a id="contact"><h1>Contact</h1></a>
-        <p>Have a question or want to work together?</p>
-
-       <p class="gmail">Contact me: <a href="mailto:drakecalilung@gmail.com">drakecalilung@gmail.com</a></p> 
+       <p class="gmail"><a href="mailto:drakecalilung@gmail.com">drakecalilung@gmail.com</a></p> 
 
       <a href="#"><i class="fal fa-hand-point-up"></i></a> 
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 </body>
 </html>
