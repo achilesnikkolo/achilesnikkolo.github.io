@@ -43,6 +43,10 @@ a {
     color: #687ebe;
   }
 }
+p,
+a {
+  animation: transition_color 0.7s ease-in-out;
+}
 //head
 .bg-color {
   background-color: $bg-color;
@@ -65,9 +69,9 @@ a {
     padding: 10px;
   }
   .name {
-    font-weight: 1000;
+    font: 1000 1.9em 'Montserrat', sans-serif;
     color: #02b9f2;
-    font-size: 1.3em;
+    // font-size: 1.3em;
     animation: transition_color 0.7s ease-in-out;
 
     @media (max-width: 700px) {
@@ -78,6 +82,7 @@ a {
       font-size: 25px;
     }
   }
+
   .description {
     text-transform: initial;
     font-size: 27px;
@@ -450,6 +455,15 @@ a {
   }
   .medium {
     background-color: #1a2528;
+  }
+  animation: forCircle 0.7s ease-in;
+  @keyframes forCircle {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 // body

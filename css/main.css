@@ -78,6 +78,12 @@ a:hover {
   color: #687ebe;
 }
 
+p,
+a {
+  -webkit-animation: transition_color 0.7s ease-in-out;
+          animation: transition_color 0.7s ease-in-out;
+}
+
 .bg-color {
   background-color: #3a476b;
   -webkit-transition: 0.5s ease-in-out;
@@ -110,9 +116,8 @@ a:hover {
 }
 
 #head .name {
-  font-weight: 1000;
+  font: 1000 1.9em 'Montserrat', sans-serif;
   color: #02b9f2;
-  font-size: 1.3em;
   -webkit-animation: transition_color 0.7s ease-in-out;
           animation: transition_color 0.7s ease-in-out;
 }
@@ -617,6 +622,11 @@ a:hover {
   color: initial;
 }
 
+.circle_container {
+  -webkit-animation: forCircle 0.7s ease-in;
+          animation: forCircle 0.7s ease-in;
+}
+
 .circle_container .circle {
   width: 25px;
   height: 25px;
@@ -643,6 +653,24 @@ a:hover {
 
 .circle_container .medium {
   background-color: #1a2528;
+}
+
+@-webkit-keyframes forCircle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes forCircle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .body {
