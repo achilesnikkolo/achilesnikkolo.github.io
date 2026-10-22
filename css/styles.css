@@ -329,6 +329,10 @@ a {
   }
 }
 
+.tile--stat {
+  justify-content: center;
+}
+
 .stat__number {
   font-size: 2.5rem;
   font-weight: 700;
