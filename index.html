@@ -7,6 +7,12 @@
   <meta name="description" content="Front-end developer specializing in Shopify, with 5 years of experience supporting e-commerce merchants.">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
+ <script>
+  try {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+  } catch (error) {}
+</script>   
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -41,7 +47,10 @@
     </section>
 
     <div class="tile tile--photo">
-      <img src="img/profile.jpg" alt="Achiles Calilung" width="160" height="160" class="profile-photo">
+    <div class="profile">
+        <img src="img/profile.jpg" alt="Achiles Calilung" width="160" height="160" class="profile-photo">
+        <img src="img/avatar.png" alt="" width="160" height="160" class="profile-photo profile-photo--avatar">
+    </div>
     </div>
 
     <section class="tile tile--wide">
