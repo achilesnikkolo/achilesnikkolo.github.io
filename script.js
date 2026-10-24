@@ -252,3 +252,12 @@ function showResult() {
 }
 
 if (quizContainer) startQuiz();
+
+// ===== Part 6: Mobile menu =====
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenu) {
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => mobileMenu.hidePopover());
+  });
+}

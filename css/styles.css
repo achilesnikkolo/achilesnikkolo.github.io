@@ -164,6 +164,45 @@ a {
   transform-origin: left;
 }
 
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  inset: auto;
+  top: 64px;
+  right: 16px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.mobile-menu:popover-open {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu a {
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background: var(--color-tint);
+}
 /* ========== 4. Bento grid ========== */
 .bento {
   display: grid;
@@ -245,6 +284,9 @@ a {
 
   .site-nav {
     display: none;
+  }
+  .menu-toggle {
+    display: inline-block;
   }
 }
 
