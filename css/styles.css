@@ -44,7 +44,15 @@
   --color-tint: #0b3d32;
   --color-tint-text: #9fe1cb;
   color-scheme: dark;
+  /* In :root (light) */
+--color-progress: #faeeda;
+--color-progress-text: #633806;
+
+/* In both dark blocks */
+--color-progress: #412402;
+--color-progress-text: #fac775;
 }
+
 
 /* ========== 2. Base ========== */
 *,
@@ -291,6 +299,28 @@ a {
 }
 
 /* ========== 5. Components ========== */
+.tile__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag--progress {
+  background: var(--color-progress);
+  color: var(--color-progress-text);
+}
+
+.tag--progress::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: middle;
+}
+
 .eyebrow {
   font-size: 0.875rem;
   font-weight: 500;
